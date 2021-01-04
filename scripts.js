@@ -93,7 +93,7 @@ async function getNextSongs() {
 
     let songs = JSON.parse(window.localStorage.getItem("songs"));
 
-    let url = songs.next;
+    let url = songs.next.replace("http://", "https://");
 
     fetch(url)
         .then((resp) => resp.json())
@@ -112,7 +112,7 @@ async function getPreviousSongs() {
 
     let songs = JSON.parse(window.localStorage.getItem("songs"));
 
-    let url = songs.prev;
+    let url = songs.prev.replace("http://", "https://");
 
     fetch(url)
         .then((resp) => resp.json())
