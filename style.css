@@ -6,53 +6,233 @@
     Website: https://www.deepakpriyadarshi.com/
 */
 
-* { font: Verdana, Arial, 'sans-serif' !important; }
-body { background-image: url('assets/background.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center; height: 100%; }
+* {
+    font: Verdana, Arial, "sans-serif" !important;
+}
+body {
+    background-image: url("assets/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+}
 
 /* Common CSS Starts Here */
-.text-white { color: #ffffff; }
+.text-white {
+    color: #ffffff;
+}
 /* Common CSS Ends Here */
 
 /* Lyrics Logo Block Starts Here */
-.logo-block { display: table; margin: 50px auto; }
-.logo-block .logo { width: 200px; height: 200px; border-radius: 10px; }
+.logo-block {
+    display: table;
+    margin: 50px auto;
+}
+.logo-block .logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
 /* Lyrics Logo Block Ends Here */
 
 /* Song Search Block Starts Here */
-.search-block { background-color: rgba(255, 255, 255, 0.9); border-radius: 10px; padding: 10px 10px 10px 10px; width: 350px; margin: 10px auto; padding-bottom: 50px; }
-.search-block input[type=text] { width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; }
-.search-block a{ float: right; display: inline-flex; background-color: #444444; color: white; padding: 5px 15px 5px 5px; border-radius: 50px; text-decoration: none; }
-.search-input-msg { color: red; text-align: center; margin-bottom: 10px; }
-@media screen and (max-width: 972px) { .search-block { width: 90%; } }
+.search-block {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    width: 350px;
+    margin: 10px auto;
+    padding-bottom: 50px;
+}
+.search-block input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.search-block a {
+    float: right;
+    display: inline-flex;
+    background-color: #444444;
+    color: white;
+    padding: 5px 15px 5px 5px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+.search-input-msg {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 972px) {
+    .search-block {
+        width: 90%;
+    }
+}
 /* Song Search Block Ends Here */
 
 /* Song Search Block Starts Here */
-.songs-result-block { background-color: #555555; width: 550px; margin: 0 auto; padding: 20px 20px 20px 20px; min-height: auto; }
-@media screen and (max-width: 972px) { .songs-result-block { width: 95%; } }
+.songs-result-block {
+    background-color: #555555;
+    width: 550px;
+    margin: 0 auto;
+    padding: 20px 20px 20px 20px;
+    min-height: auto;
+}
+@media screen and (max-width: 972px) {
+    .songs-result-block {
+        width: 95%;
+    }
+}
 
-.song { width: 99%; background-color: rgba(255, 255, 255, 1); display: inline-block; border-radius: 10px; margin-bottom: 10px; padding: 5px 5px; }
-.song-details { position: inherit; background-color: rgba(255, 255, 255, 1); float: left; width: 50px; padding: 5px 5px 5px 5px; margin-bottom: 10px; }
-.artist-details { position: inherit; background-color: rgba(255, 255, 255, 1); float: left; width: 80%; padding: 5px 5px 5px 5px; margin-bottom: 10px; }
-.artist-details .song-title { margin: 0px; }
-.artist-details .song-artist-name { color: #444444; text-decoration: none; font-size: 13px; }
-.show-lyrics-btn { background-color: indianred; color: #ffffff; padding: 3px 10px 3px 10px; text-decoration: none; border-radius: 5px; float: right; }
-.navigation-block { width: 99%; background-color: rgba(255, 255, 255, 1); display: inline-block; border-radius: 10px; padding: 5px 5px 0px 5px; }
-.previous { position: inherit; background-color: rgba(255, 255, 255, 1); float: left; width: 150px; padding: 5px 0px 0px 0px; margin-bottom: 10px; }
-.next { position: inherit; background-color: rgba(255, 255, 255, 1); float: right; width: 150px; padding: 5px 0px 0px 0px; margin-bottom: 10px; }
-#next-page-btn { background-color: darkslategrey; color: #ffffff; padding: 5px 20px 5px 20px; text-decoration: none; border-radius: 5px; float: right; }
-#previous-page-btn { background-color: darkslategrey; color: #ffffff; padding: 5px 20px 5px 20px; text-decoration: none; border-radius: 5px; float: left; }
+.song {
+    width: 99%;
+    background-color: rgba(255, 255, 255, 1);
+    display: inline-block;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 5px 5px;
+}
+.song-details {
+    position: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    float: left;
+    width: 50px;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 10px;
+}
+.artist-details {
+    position: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    float: left;
+    width: 80%;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 10px;
+}
+.artist-details .song-title {
+    margin: 0px;
+}
+.artist-details .song-artist-name {
+    color: #444444;
+    text-decoration: none;
+    font-size: 13px;
+}
+.show-lyrics-btn {
+    background-color: indianred;
+    color: #ffffff;
+    padding: 3px 10px 3px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    float: right;
+}
+.navigation-block {
+    width: 99%;
+    background-color: rgba(255, 255, 255, 1);
+    display: inline-block;
+    border-radius: 10px;
+    padding: 5px 5px 0px 5px;
+}
+.previous {
+    position: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    float: left;
+    width: 150px;
+    padding: 5px 0px 0px 0px;
+    margin-bottom: 10px;
+}
+.next {
+    position: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    float: right;
+    width: 150px;
+    padding: 5px 0px 0px 0px;
+    margin-bottom: 10px;
+}
+#next-page-btn {
+    background-color: darkslategrey;
+    color: #ffffff;
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    float: right;
+}
+#previous-page-btn {
+    background-color: darkslategrey;
+    color: #ffffff;
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    float: left;
+}
 /* Song Search Block Ends Here */
 
 /* Loaders Starts Here */
-@-webkit-keyframes anim { from {-webkit-transform: rotateY(0deg);} to {-webkit-transform: rotateY(360deg);} }
-@-moz-keyframes anim { from {-moz-transform: rotateY(0deg);} to {-moz-transform: rotateY(360deg);} }
-@keyframes anim { from {transform: rotateY(0deg);} to {transform: rotateY(360deg);} }
-.song-loader { -webkit-animation: anim 2s infinite linear; -moz-animation: anim 2s infinite linear; animation: anim 2s infinite linear; }
+@-webkit-keyframes anim {
+    from {
+        -webkit-transform: rotateY(0deg);
+    }
+    to {
+        -webkit-transform: rotateY(360deg);
+    }
+}
+@-moz-keyframes anim {
+    from {
+        -moz-transform: rotateY(0deg);
+    }
+    to {
+        -moz-transform: rotateY(360deg);
+    }
+}
+@keyframes anim {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+.song-loader {
+    -webkit-animation: anim 2s infinite linear;
+    -moz-animation: anim 2s infinite linear;
+    animation: anim 2s infinite linear;
+}
 /* Loaders Ends Here */
 
 /* The Lyrics Modal Starts Here */
-.lyrics-modal { display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.4); border-radius: 10px; }
-.lyrics-modal-content { background-color: #fefefe; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 80%; }
-.close { background-color: red; color: #ffffff; float: right; font-size: 20px; font-weight: bold; padding: 5px 10px 5px 10px; border-radius: 10px }
-.close:hover, .close:focus { color: black; text-decoration: none; cursor: pointer; }
+.lyrics-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+.lyrics-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close {
+    background-color: red;
+    color: #ffffff;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 /* The Lyrics Modal Ends Here */
